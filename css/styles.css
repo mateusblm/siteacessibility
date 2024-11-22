@@ -152,20 +152,20 @@ form {
     align-items: center;
 }
 
-.duvidas-button {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 12px;
-    color: #fff;
-    background-color: #00796b; /* Verde escuro */
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-}
+        .duvidas-button {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: #fff;
+            background-color: #00796b; /* Verde escuro */
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
 
-.duvidas-button:hover {
-    background-color: #004d40; /* Verde ainda mais escuro para hover */
-}
+        .duvidas-button:hover {
+            background-color: #004d40; /* Verde ainda mais escuro para hover */
+        }
