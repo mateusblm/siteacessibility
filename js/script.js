@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (localStorage.getItem("fontSize")) document.body.style.fontSize = `${localStorage.getItem("fontSize")}px`;
         if (localStorage.getItem("largeCursor") === "true") document.body.classList.add("large-cursor");
         if (localStorage.getItem("keyboardNavigation") === "true") document.body.classList.add("keyboard-navigation");
-
+ 
         // Carregar o estado do checkbox TTS
         const ttsCheckbox = document.getElementById("tts");
         if (ttsCheckbox) {
