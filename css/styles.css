@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #e9f5f9;
+    background-color: #e0f7e9; /* Verde aguado */
     margin: 0;
     padding: 0;
 }
 
 header, footer {
-    background-color: #005f73;
+    background-color: #00796b; /* Verde mais escuro para contraste */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -60,7 +60,7 @@ input, textarea, button {
 }
 
 button {
-    background-color: #005f73;
+    background-color: #00796b; /* Verde mais escuro */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -68,34 +68,104 @@ button {
 }
 
 button:hover {
-    background-color: #0a9396;
+    background-color: #004d40; /* Verde ainda mais escuro para hover */
 }
 
 address {
     margin-top: 20px;
     font-style: normal;
 }
+
 /* Estilo para lista de artigos */
 .article-item {
     margin: 15px 0;
     padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #e8f5e9; /* Verde claro */
+    border: 1px solid #c8e6c9; /* Verde claro para borda */
     border-radius: 5px;
 }
 
 .article-item h2 {
     margin: 0 0 5px;
     font-size: 18px;
-    color: #005f99;
+    color: #004d40; /* Verde escuro */
 }
 
 .article-item a {
-    color: #005f99;
+    color: #004d40; /* Verde escuro */
     text-decoration: none;
     margin-right: 10px;
 }
 
 .article-item a:hover {
     text-decoration: underline;
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.high-contrast {
+    filter: contrast(2);
+}
+
+body.daltonismo {
+    --main-color: #005B96;
+    --secondary-color: #FFB81C;
+    --background-color: #A0A0A0;
+    --text-color: #E91E63;
+    --highlight-color: #4CAF50;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.spacing {
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+body.simplified-reading .non-essential {
+    display: none;
+}
+
+body.large-cursor {
+    cursor: url('../path/to/large-cursor.png'), auto;
+}
+
+body.keyboard-navigation :focus {
+    outline: 3px solid #ff0000; /* Destaque vermelho para elementos focados */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.h1central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duvidas-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #00796b; /* Verde escuro */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.duvidas-button:hover {
+    background-color: #004d40; /* Verde ainda mais escuro para hover */
 }
